@@ -1,0 +1,238 @@
+.gate {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gate_cont {
+  position: relative;
+  width: 65.65%;
+  height: 100vh;
+}
+.gate_cont .gate_arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 4.8%;
+  cursor: pointer;
+}
+.gate_cont .gate_p {
+  left: 4%;
+}
+.gate_cont .gate_n {
+  right: 4%;
+}
+.gate_slider {
+  width: 100%;
+  height: 100%;
+}
+.gate_slider div {
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+  transition: 1.5s;
+}
+.gate_slider div.slick-current {
+}
+.gate_slider div img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: 3.5s;
+  /* transform: scale(1); */
+  transform: scale(1.05);
+}
+.gate_slider div.slick-current img {
+  /* transform: scale(1.05); */
+  transform: scale(1);
+}
+.gate .desc {
+  width: calc(100% - 65.65%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.gate .desc .item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gate .desc .item .link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gate .desc .item .inner {
+  width: 81%;
+}
+.gate .desc .item .title {
+  width: 100%;
+}
+.gate .desc .item .link .link_btn img {
+  display: block;
+}
+
+.gate .desc .item01 {
+  height: 65%;
+  background: url("../image/item01_bg.png") no-repeat center center;
+  background-size: cover;
+}
+.gate .desc .item01 .title {
+}
+.gate .desc .item01 .title img.title01-01 {
+  width: 45.5%;
+  margin-bottom: 26px;
+}
+.gate .desc .item01 .title img.title01-02 {
+  width: 100%;
+}
+
+.gate .desc .item01 .link {
+  margin-top: 12%;
+}
+.gate .desc .item01 .link img {
+}
+.gate .desc .item01 .link img.link01_logo {
+  width: 41%;
+}
+.gate .desc .item01 .link .link01_btn {
+  width: 35%;
+}
+.gate .desc .item01 .link .link01_btn img {
+  width: 100%;
+}
+
+.gate .desc .item02 {
+  height: calc(100% - 65%);
+  background: #0c3d4b;
+}
+.gate .desc .item02 .title {
+}
+.gate .desc .item02 .title img.title02-01 {
+  width: 57%;
+  margin-bottom: 11px;
+}
+.gate .desc .item02 .title img.title02-02 {
+  width: 100%;
+}
+
+.gate .desc .item02 .link {
+  margin-top: 5.7%;
+}
+.gate .desc .item02 .link img {
+}
+.gate .desc .item02 .link img.link02_logo {
+  width: 42.2%;
+}
+.gate .desc .item02 .link .link02_btn {
+  width: 33%;
+}
+.gate .desc .item02 .link .link02_btn img {
+  width: 100%;
+}
+/* PC, 테블릿 */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .gate {
+    flex-direction: column;
+  }
+  .gate_cont {
+    position: relative;
+    width: 100%;
+    height: 68vh;
+  }
+  .gate_cont .gate_arrow {
+    width: 7%;
+  }
+  .gate .desc {
+    width: 100%;
+    height: 32vh;
+    flex-direction: row;
+  }
+  .gate .desc .item {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gate .desc .item .inner {
+    width: 85%;
+  }
+
+  .gate .desc .item01 .title img.title01-01,
+  .gate .desc .item02 .title img.title02-01 {
+    width: 57%;
+    margin-bottom: 11px;
+  }
+
+  .gate .desc .item01 .link,
+  .gate .desc .item02 .link {
+    margin-top: 4.5%;
+  }
+  .gate .desc .item01 .link img.link01_logo,
+  .gate .desc .item02 .link img.link02_logo {
+    width: 50%;
+  }
+  .gate .desc .item01 .link .link01_btn,
+  .gate .desc .item02 .link .link02_btn {
+    width: 36%;
+  }
+}
+/* 모바일, 테블릿 */
+@media all and (min-width: 374px) and (max-width: 767px) {
+  .gate {
+    flex-direction: column;
+  }
+  .gate_cont {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+  }
+  .gate_cont .gate_arrow {
+    width: 6.5%;
+  }
+  .gate .desc {
+    width: 100%;
+    height: 60vh;
+    flex-direction: column;
+  }
+  /* .gate .desc .item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  .gate .desc .item .inner {
+    width: 85%;
+  }
+
+  .gate .desc .item01 {
+    height: 55%;
+  }
+  .gate .desc .item02 {
+    height: 45%;
+  }
+  .gate .desc .item01 .title img.title01-01,
+  .gate .desc .item02 .title img.title02-01 {
+    width: 57%;
+    margin-bottom: 11px;
+  }
+
+  .gate .desc .item01 .link,
+  .gate .desc .item02 .link {
+    margin-top: 4.5%;
+  }
+  .gate .desc .item01 .link img.link01_logo,
+  .gate .desc .item02 .link img.link02_logo {
+    width: 43%;
+  }
+  .gate .desc .item01 .link .link01_btn,
+  .gate .desc .item02 .link .link02_btn {
+    width: 40%;
+  }
+}

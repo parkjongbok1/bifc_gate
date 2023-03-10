@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
+/* font-family: 'Noto Sans KR', sans-serif; */
+/* Light 300 */
+/* Regular 400 */
+/* Medium 500 */
+/* Bold 700 */
+/* Black 900 */
+
+@import url("https://fonts.googleapis.com/css2?family=Gulzar&display=swap");
+/* font-family: 'Gulzar', serif; */
+
+/* wrap */
+html {
+  height: 100%;
+  background: #ffffff;
+  font-family: "Noto Sans KR", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: -0.025em;
+  word-break: keep-all;
+  color: #000;
+}
+.wrep {
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+section {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.img {
+  display: block;
+}
