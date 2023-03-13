@@ -26,6 +26,7 @@ body {
 .wrep {
   width: 100%;
   max-width: 1920px;
+  /* min-width: 1400px; */
   position: relative;
   margin: 0 auto;
   overflow: hidden;
@@ -33,6 +34,7 @@ body {
 section {
   width: 100%;
   max-width: 1920px;
+  /* min-width: 1400px; */
   margin: 0 auto;
   position: relative;
   overflow: hidden;
