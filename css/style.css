@@ -8,6 +8,9 @@
   position: relative;
   width: 65.65%;
   height: 100vh;
+
+  animation: load_bg 2s both;
+  animation-delay: 0.2s;
 }
 .gate_cont .gate_arrow {
   position: absolute;
@@ -31,22 +34,13 @@
   width: 100%;
   height: 100%;
   font-size: 0;
-  transition: 3.5s;
-  /* transform: scale(1); */
-  /* transform: scale(1.05); */
-}
-.gate_slider div.slick-current {
-  /* transform: scale(1.05); */
-  /* transform: scale(1); */
 }
 .gate_slider div img {
   width: 100%;
   height: 100%;
-  display: block;
-  /* object-fit: cover; */
+  transform-origin: center center;
 }
-.gate_slider div.slick-current img {
-}
+
 .gate .desc {
   width: calc(100% - 65.65%);
   height: 100vh;
@@ -60,6 +54,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: load_bg 2s both;
 }
 .gate .desc .item .link {
   width: 100%;
@@ -81,8 +76,19 @@
   height: 65%;
   background: url("../image/item01_bg.png") no-repeat center center;
   background-size: cover;
+  animation-delay: 0.4s;
 }
 .gate .desc .item01 .title {
+}
+.gate .desc .item01 .title img.title01-01,
+.gate .desc .item02 .title img.title02-01 {
+  animation: load_L 2s both;
+  animation-delay: 0.2s;
+}
+.gate .desc .item01 .title img.title01-02,
+.gate .desc .item02 .title img.title02-02 {
+  animation: load_R 2s both;
+  animation-delay: 0.2s;
 }
 .gate .desc .item01 .title img.title01-01 {
   width: 45.5%;
@@ -91,7 +97,11 @@
 .gate .desc .item01 .title img.title01-02 {
   width: 100%;
 }
-
+.gate .desc .item01 .link,
+.gate .desc .item02 .link {
+  animation: load_L 2s both;
+  animation-delay: 0.2s;
+}
 .gate .desc .item01 .link {
   margin-top: 12%;
 }
@@ -110,6 +120,7 @@
 .gate .desc .item02 {
   height: calc(100% - 65%);
   background: #0c3d4b;
+  animation-delay: 0.6s;
 }
 .gate .desc .item02 .title {
 }
@@ -243,3 +254,5 @@
     width: 100%;
   }
 }
+/* animation: load_bg 2s both;
+animation-delay: 0.2s; */
