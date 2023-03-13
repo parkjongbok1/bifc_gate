@@ -31,22 +31,21 @@
   width: 100%;
   height: 100%;
   font-size: 0;
-  transition: 1.5s;
+  transition: 3.5s;
+  /* transform: scale(1); */
+  /* transform: scale(1.05); */
 }
 .gate_slider div.slick-current {
+  /* transform: scale(1.05); */
+  /* transform: scale(1); */
 }
 .gate_slider div img {
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: cover;
-  transition: 3.5s;
-  /* transform: scale(1); */
-  transform: scale(1.05);
+  /* object-fit: cover; */
 }
 .gate_slider div.slick-current img {
-  /* transform: scale(1.05); */
-  transform: scale(1);
 }
 .gate .desc {
   width: calc(100% - 65.65%);
